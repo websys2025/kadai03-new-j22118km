@@ -4,6 +4,7 @@
         <meta charset="urf-8">
         <title>演習課題3-3</title>
     </head>
+    
     <body>
         <script>
             const members = new Object(); 
@@ -12,10 +13,14 @@
             members["J001"] = "情報次郎";
             members["J002"] = "設計士郎";
 
-            // ここに一覧を表示する処理を書く
+            for (let namae in members) {
+                console.log(namae + " " + members[namae]);
+            }
+
         </script>
     </body>
 </html>
+
 <!--
 期待される出力例
 ----------------
